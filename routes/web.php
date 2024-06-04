@@ -6,7 +6,7 @@ Route::get('/laravel', function () {
     return view('welcome');
 });
 
-Route::get('/', [\App\Http\Controllers\PaginaInicialController::class, 'paginaInical'])->name('site.index');
+Route::get('/', [\App\Http\Controllers\PaginaInicialController::class, 'paginaInicial'])->name('site.index');
 
 Route::get('/pagina-inicial', [\App\Http\Controllers\PaginaInicialController::class, 'redirect']);
 
@@ -15,5 +15,9 @@ Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato
 Route::get('/sobre', [\App\Http\Controllers\SobreController::class, 'sobre'])->name('site.sobre');
 
 
+Route::prefix('/app')->group(function() {
+    Route::get('/produtos', [\App\Http\Controllers\ProdutosController::class, 'produtos'])->name('app.produtos');
+});
 
+Route::fallback([\App\Http\Controllers\FallbackController::class, 'fallback']);
 
