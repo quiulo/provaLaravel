@@ -15,9 +15,11 @@ Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato
 Route::get('/sobre', [\App\Http\Controllers\SobreController::class, 'sobre'])->name('site.sobre');
 
 
-Route::prefix('/app')->group(function() {
-    Route::get('/produtos', [\App\Http\Controllers\ProdutosController::class, 'produtos'])->name('app.produtos');
-});
+// Route::prefix('/app')->group(function() {
+//     Route::get('/produtos', [\App\Http\Controllers\ProdutoController::class, 'produtos'])->name('app.produtos');
+// });
+
+Route::get('/produtos', [\App\Http\Controllers\ProdutosController::class, 'produtos'])->name('site.produtos');
 
 Route::fallback([\App\Http\Controllers\FallbackController::class, 'fallback']);
 

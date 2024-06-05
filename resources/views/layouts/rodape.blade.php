@@ -11,8 +11,4 @@
         <br>
         <span>fiec@fiec.edu.br</span>
     </div>
-    <div class="localizacao">
-        <h2>Localização</h2>
-        <img src="{{ asset('img/mapa.png') }}">
-    </div>
 </div>

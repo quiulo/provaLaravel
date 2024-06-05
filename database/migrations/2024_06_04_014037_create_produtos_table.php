@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome', length: 50);
-            $table->text('descricao');
+            $table->string('modelo', length: 50);
+            $table->int('ano');
             $table->float('price');
             $table->timestamps();
         });

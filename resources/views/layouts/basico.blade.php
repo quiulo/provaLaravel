@@ -3,7 +3,7 @@
     <head>
         <title>@yield('title')</title>
         <meta charset="utf-8">
-        <link rel = "stylesheet" href = "{{ asset('css/estilo-base.css') }}">
+        <link rel = "stylesheet" href = "{{ asset('css/base-css.css') }}">
     </head>
 
     <body>

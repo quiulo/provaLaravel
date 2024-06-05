@@ -1,6 +1,6 @@
 @extends('layouts.basico')
 
-@section('title', 'Sobre nós')
+@section('title', 'Sobre')
 
 @section('body')
     <div class="conteudo-pagina">
