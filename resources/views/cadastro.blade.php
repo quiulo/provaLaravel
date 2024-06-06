@@ -8,8 +8,8 @@
             <h1>Entre em contato conosco</h1>
         </div>
         <div class="informacao-pagina">
-            <div class="contato-principal">
-                @component('components.formularioContato', ["tipoBorda" => "borda-preta"])
+            <div class="cadastro-principal">
+                @component('components.formularioCadastro')
                     <p>Nossa equipe analisará sua mensagem e retornará o mais breve possível!</p>
                     <p>Lembrando que nosso tempo de resposta é em média 48 horas.</p>
                 @endcomponent
@@ -17,5 +17,4 @@
         </div>
     </div>
 
-    @include('layouts.rodape')
 @endsection

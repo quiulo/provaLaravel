@@ -9,4 +9,6 @@ class ProdutosController extends Controller
     public function produtos(){
         return view('produtos');
     }
+
+    
 }

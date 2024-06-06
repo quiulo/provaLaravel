@@ -16,7 +16,7 @@
                 <a href = "{{ route('site.sobre') }}">Sobre nós</a>
             </li>
             <li>
-                <a href = "{{ route('site.contato') }}">Contato</a>
+                <a href = "{{ route('site.cadastro') }}">Cadastre sua moto</a>
             </li>
              
         </ul>
